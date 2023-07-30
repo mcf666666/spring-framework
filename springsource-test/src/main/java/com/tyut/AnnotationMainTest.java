@@ -1,8 +1,6 @@
 package com.tyut;
 
-import com.tyut.bean.Person;
 import com.tyut.config.MainConfig;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
