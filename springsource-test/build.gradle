@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+group 'org.springframework'
+version '6.1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+//    引入spring核心容器    gradle引入依赖的坑：http://runxinzhi.com/inkyi-p-15644920.html
+    api(project(":spring-context"))
+}
+
+test {
+    useJUnitPlatform()
+}
